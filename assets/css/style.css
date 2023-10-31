@@ -189,9 +189,76 @@ main{
 
 
 .products{
-    background-color: rgb(97, 209, 243);
-    width: 100%;
+    background-color: #F9E1C0;
+    width: 100vw;
     padding: 10px;
+    display: grid;
+    justify-content: center;
+    /* place-items: center; */
+    row-gap: 48px;
+}
+
+.products-title{
+    font-size: 42px;
+    font-weight: 500;
+    color: var(--clr-orange);
+    text-align: center;
+}
+
+.products-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-product{
+    background-color: transparent;
+    border: 2px solid var(--clr-orange);
+    box-shadow: none;
+}
+
+.btn-product a{
+    color: var(--clr-orange);
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.active-product{
+    background-color: var(--clr-orange);
+    border: none;
+}
+
+.active-product a{
+    color: var(--clr-white);
+}
+
+.products-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+    width: 100%;
+}
+
+.product-card{
+    background-color: var(--clr-white);
+    width: 240px;
+    height: 320px;
+}
+
+.pc-info{
+    padding: 8px;
+}
+
+.info-price, .info-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.veg-icon{
+    width: 28px;
 }
 /* MAIN SECTION END */
 
